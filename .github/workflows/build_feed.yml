@@ -42,7 +42,7 @@ jobs:
       - name: Run the script to generate feed.json
         run: bash ./make_feed.sh
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: feed.json
           path: feed.json
