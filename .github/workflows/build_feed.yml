@@ -44,10 +44,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: feed.json
+          name: feed-json
           path: feed.json
       - name: Deploy to Pages
         uses: actions/deploy-pages@v4
         with:
           token: ${{ github.token }}
-          artifact_name: feed.json
