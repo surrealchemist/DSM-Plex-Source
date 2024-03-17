@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          pip3 install --user --upgrade j2cli
+          pip install --user --upgrade j2cli
           j2 --version
 
       # Runs a set of commands using the runners shell
