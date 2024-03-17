@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: 3.x
       - run: |
-          pip install --user --upgrade setuptools j2cli
+          pip install --user --upgrade jinja2-cli
           j2 --version
 
       # Runs a set of commands using the runners shell
