@@ -34,5 +34,5 @@ jobs:
           jinja2 --version
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run the script to generate feed.json
         run: bash ./make_feed.sh
