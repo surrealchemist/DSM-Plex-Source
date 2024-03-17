@@ -13,7 +13,7 @@ sha256=$(echo "$PLEX_JSON" | jq -r '.nas."Synology (DSM 7)".releases[1] | .check
 
 wget -q "$link" -O $version.spk
 
-md5=$(md5sum $version.spk)
+md5=$(md5sum "$version.spk" | cut -f1)
 size=$(du -k "$version.spk" | cut -f1)
 
 rm $version.spk
